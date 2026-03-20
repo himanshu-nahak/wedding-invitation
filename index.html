@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu & Rohina | Wedding Invitation</title>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="overflow: hidden;"> 
+    <div id="particles-container"></div>
+
+    <div id="splash-screen" class="splash royal-gradient">
+        <div class="splash-bg" style="background-image: url('assets/Elegant%20Wedding%20Backdrop%20Ideas%20with%20Fairy%20Lights%20and%20Floral%20Accents.jpg'); mix-blend-mode: overlay;"></div>
+        <div class="splash-content text-center">
+            <h1 class="splash-names fade-seq">Himanshu <span class="ampersand">&</span> Rohina</h1>
+            <p class="splash-formal fade-seq delay-1">request the honor of your presence</p>
+            <button id="enter-btn" class="enter-btn fade-seq delay-2">Tap to Begin the Journey</button>
+        </div>
+    </div>
+
+    <!-- Navigation Dots. I will update targets -->
+    <nav class="scroll-dots">
+        <div class="dot active" data-target="#home"></div>
+        <div class="dot" data-target="#story"></div>
+        <div class="dot" data-target="#welcome"></div>
+        <div class="dot" data-target="#engagement"></div>
+        <div class="dot" data-target="#haldi"></div>
+        <div class="dot" data-target="#wedding"></div>
+        <div class="dot" data-target="#reception"></div>
+    </nav>
+
+    <div id="main-content" class="content-wrapper">
+        
+        <header class="section hero royal-gradient" id="home">
+            <div class="hero-bg" style="background-image: url('assets/Elegant%20Wedding%20Backdrop%20Ideas%20with%20Fairy%20Lights%20and%20Floral%20Accents.jpg'); mix-blend-mode: overlay;"></div>
+            <div class="hero-content text-center fade-up">
+                <h1 class="names">Himanshu <span class="ampersand">&</span> Rohina</h1>
+                <p class="hero-formal-text">
+                    request the honor of your presence<br>
+                    to celebrate their wedding
+                </p>
+                <div id="countdown" class="countdown-container">
+                    <p class="countdown-title">Wedding begins in..</p>
+                    <div class="countdown-timer">
+                        <div class="time-box"><span class="days">00</span><small>Days</small></div>
+                        <div class="time-box"><span class="hours">00</span><small>Hrs</small></div>
+                        <div class="time-box"><span class="minutes">00</span><small>Min</small></div>
+                        <div class="time-box"><span class="seconds">00</span><small>Sec</small></div>
+                    </div>
+                </div>
+                <h3 class="hero-date" style="margin-top: 2rem;">May 2026</h3>
+                <p class="location">Hotel Laxmipriya, Odisha</p>
+            </div>
+        </header>
+
+        <!-- Use the mandala image as background with the parallax effect -->
+        <section class="section welcome section-padding parallax-mandala royal-gradient" id="welcome" style="padding: 10rem 0;">
+            <div class="parallax-bg" style="background-image: url('assets/mandala%20transparent%20subtle%20gold%20pattern.jpg');"></div>
+            <div class="container text-center fade-up welcome-content">
+                <h2 class="section-title text-light">You are Invited</h2>
+                <p class="section-text text-light">
+                    It is with immense joy and gratitude that we invite you to be a part of our beautiful journey. As we step into a new chapter of our lives, we carry the blessings of our ancestors and the rich traditions of Odisha. We would be profoundly honored to have you witness our union and share in the love, laughter, and festivities. Your presence will make our celebration truly complete.
+                </p>
+            </div>
+        </section>
+
+        <!-- Event Pages -->
+        <!-- Engagement -->
+        <section class="section event-page" id="engagement" style="background-image: linear-gradient(rgba(251, 250, 248, 0.65), rgba(251, 250, 248, 0.65)), url('assets/engagement%20backdrop.jpg'); background-size: cover; background-position: center;">
+            <div class="container text-center fade-up">
+                <div class="event-card glass-card">
+                    <h2 class="event-page-title">Nirbandh / Engagement</h2>
+                    <p class="event-page-date">Friday, May 1, 2026</p>
+                    <p class="event-page-loc" style="font-weight: 500;">Paliama Village</p>
+                    <p style="margin-bottom: 2rem; color: #555856;">A quiet morning as two families officially become one. Join us for the ring ceremony.</p>
+                    <button class="action-btn solid-btn interact-ring" data-next="#haldi">💍 Make it Official</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Haldi -->
+        <section class="section event-page royal-gradient" id="haldi" style="background-image: linear-gradient(145deg, rgba(11,12,16,0.65), rgba(31,18,46,0.65), rgba(58,17,39,0.65)), url('assets/haldi%20backdrop.jpg'); background-size: cover; background-position: center;">
+            <div class="container text-center fade-up">
+                <div class="event-card glass-card-dark">
+                    <h2 class="event-page-title text-light">Haldi, Mehendi & Sangeet</h2>
+                    <p class="event-page-date text-champagne">Tuesday, May 5, 2026</p>
+                    <p class="event-page-loc text-light" style="opacity: 0.9; font-weight: 500;">Hotel Laxmipriya</p>
+                    <p style="margin-bottom: 2rem; color: #EBE5DB;">Dress in shades of yellow! Get ready for vibrant colors followed by evening Dhol beats and dancing.</p>
+                    <button class="action-btn solid-btn interact-dance" data-next="#wedding">💃 Bring the Dhol</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wedding -->
+        <section class="section event-page" id="wedding" style="background-image: linear-gradient(rgba(241, 239, 234, 0.65), rgba(241, 239, 234, 0.65)), url('assets/wedding%20baraat%20bidaai%20backdrop%20mandap.jpg'); background-size: cover; background-position: center;">
+            <div class="container text-center fade-up">
+                <div class="event-card glass-card">
+                    <h2 class="event-page-title">Baraat, Wedding & Bidaai</h2>
+                    <p class="event-page-date">Thursday, May 7, 2026</p>
+                    <p class="event-page-loc" style="font-weight: 500;">(Groom Haldi on May 6) &bull; Hotel Laxmipriya</p>
+                    <p style="margin-bottom: 2rem; color: #555856;">Join the Baraat procession and witness the sacred vows and floral blessings as we begin our forever.</p>
+                    <button class="action-btn solid-btn interact-wedding" data-next="#reception">🔔 Witness the Vows</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reception -->
+        <section class="section event-page royal-gradient" id="reception" style="background-image: linear-gradient(145deg, rgba(11,12,16,0.7), rgba(31,18,46,0.7), rgba(58,17,39,0.7)), url('assets/Reception%20backdrop%20lunch.jpg'); background-size: cover; background-position: center;">
+            <div class="container text-center fade-up">
+                <div class="event-card glass-card-dark">
+                    <h2 class="event-page-title text-light">Reception Lunch</h2>
+                    <p class="event-page-date text-champagne">Friday, May 8, 2026</p>
+                    <p class="event-page-loc text-light" style="opacity: 0.9; font-weight: 500;">Hotel Laxmipriya</p>
+                    <p style="margin-bottom: 2rem; color: #EBE5DB;">A memorable afternoon filled with toasts, laughter, blessings, and a grand feast.</p>
+                    <button class="action-btn solid-btn interact-reception" data-next="#locations">🥂 Time to Celebrate</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations -->
+        <section class="section section-padding" id="locations" style="background-color: var(--color-ivory);">
+            <div class="container text-center fade-up">
+                <h2 class="section-title">Venues</h2>
+                <div class="location-cards" style="margin-top: 4rem;">
+                    <div class="loc-card premium-loc-card">
+                        <h3 style="color: var(--color-charcoal); font-size: 1.8rem;">Groom's Residence</h3>
+                        <p class="event-page-loc" style="color: var(--color-accent); font-weight: bold; margin-bottom: 0.5rem;">Taratarini Junction</p>
+                        <p style="margin-bottom: 2rem; font-size: 0.9rem; color: #666;">For specific events like Groom Haldi photoshoot.</p>
+                        <a href="https://maps.app.goo.gl/z1RQssC63g5UTudE9" target="_blank" class="map-btn solid-map">📍 View on Map</a>
+                    </div>
+                    <div class="loc-card premium-loc-card">
+                        <h3 style="color: var(--color-charcoal); font-size: 1.8rem;">Hotel Laxmipriya</h3>
+                        <p class="event-page-loc" style="color: var(--color-accent); font-weight: bold; margin-bottom: 0.5rem;">Berhampur, Odisha</p>
+                        <p style="margin-bottom: 2rem; font-size: 0.9rem; color: #666;">Main venue for Sangeet, Wedding Ceremony, and Reception.</p>
+                        <a href="https://maps.app.goo.gl/NbWWvCMPkWP7xVwB8" target="_blank" class="map-btn solid-map">📍 View on Map</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="section footer royal-gradient" id="footer" style="position: relative; overflow: hidden;">
+            <div class="container text-center fade-up">
+                <p class="ending-text">Yours joyfully,</p>
+                <h2 class="names-small">Himanshu <span style="font-style: italic; font-weight: 300;">&</span> Rohina</h2>
+                
+                <!-- Footer Countdown Integration -->
+                <div class="countdown-container footer-countdown fade-up delay-1" style="margin: 3rem 0;">
+                    <p class="countdown-title" style="font-size: 1rem; color: var(--color-ivory);">Wedding begins in..</p>
+                    <div class="countdown-timer">
+                        <div class="time-box"><span class="days text-champagne">00</span><small>Days</small></div>
+                        <div class="time-box"><span class="hours text-champagne">00</span><small>Hrs</small></div>
+                        <div class="time-box"><span class="minutes text-champagne">00</span><small>Min</small></div>
+                        <div class="time-box"><span class="seconds text-champagne">00</span><small>Sec</small></div>
+                    </div>
+                </div>
+
+                <p style="color: var(--color-champagne-light); opacity: 0.8;">We can't wait to celebrate with you.</p>
+                <br>
+                <div style="margin-top: 1rem; justify-content: center; display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="#" class="download-btn fade-up delay-2">Download Invite (PDF)</a>
+                    <a href="#home" class="scroll-to-top download-btn fade-up delay-3" style="background: transparent; color: var(--color-ivory); border-color: var(--color-ivory);">↑ Back to Top</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
